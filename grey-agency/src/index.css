@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-black: #0a0a0a;
+  --color-white: #f5f5f0;
+  --color-grey-100: #e8e8e3;
+  --color-grey-200: #c8c8c0;
+  --color-grey-400: #888880;
+  --color-grey-600: #444440;
+  --color-accent: #c8a96e;
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+}
+
+/* Base resets */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: none;
+}
+
+a, button {
+  cursor: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--color-black); }
+::-webkit-scrollbar-thumb { background: var(--color-grey-600); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-grey-400); }
+
+/* ── Marquee ── */
+@keyframes marquee-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  display: flex;
+  flex-shrink: 0;
+  min-width: 100%;
+  width: max-content;
+  animation: marquee-scroll 32s linear infinite;
+  will-change: transform;
+}
+
+/* Each half of the track must be at least 100vw wide */
+.marquee-half {
+  display: flex;
+  flex-shrink: 0;
+  min-width: 100vw;
+  align-items: center;
+}
