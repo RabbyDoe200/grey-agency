@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 export default function Footer() {
@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link to="/">
-              <span className="text-5xl font-serif font-bold tracking-widest text-white hover:text-[#c8a96e] transition-colors duration-300">
+              <span className="text-5xl font-serif font-bold tracking-widest text-white hover:text-[#F44336] transition-colors duration-300">
                 GREY
               </span>
             </Link>

@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+﻿import { motion } from 'framer-motion'
 import PageTransition from '../components/PageTransition'
 
 const podcasts = [
@@ -53,13 +53,13 @@ function PodcastCard({ pod, index }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-40px' }}
       transition={{ duration: 0.5, delay: (index % 3) * 0.08 }}
-      className="border border-white/10 p-8 hover:border-[#c8a96e]/30 transition-colors duration-300 group"
+      className="border border-white/10 p-8 hover:border-[#F44336]/30 transition-colors duration-300 group"
     >
       <div className="flex items-start gap-4 mb-5">
-        <div className="w-10 h-10 rounded-full bg-[#c8a96e]/10 flex items-center justify-center shrink-0 mt-1">
-          <span className="text-[#c8a96e] text-sm">▶</span>
+        <div className="w-10 h-10 rounded-full bg-[#F44336]/10 flex items-center justify-center shrink-0 mt-1">
+          <span className="text-[#F44336] text-sm">▶</span>
         </div>
-        <h3 className="text-white font-serif text-lg leading-snug group-hover:text-[#c8a96e] transition-colors duration-300">
+        <h3 className="text-white font-serif text-lg leading-snug group-hover:text-[#F44336] transition-colors duration-300">
           {pod.title}
         </h3>
       </div>
@@ -69,7 +69,7 @@ function PodcastCard({ pod, index }) {
           href={pod.spotify}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs tracking-widest uppercase text-white/40 hover:text-[#c8a96e] transition-colors duration-200 border border-white/10 hover:border-[#c8a96e]/40 px-4 py-2"
+          className="text-xs tracking-widest uppercase text-white/40 hover:text-[#F44336] transition-colors duration-200 border border-white/10 hover:border-[#F44336]/40 px-4 py-2"
         >
           Spotify
         </a>
@@ -77,7 +77,7 @@ function PodcastCard({ pod, index }) {
           href={pod.apple}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs tracking-widest uppercase text-white/40 hover:text-[#c8a96e] transition-colors duration-200 border border-white/10 hover:border-[#c8a96e]/40 px-4 py-2"
+          className="text-xs tracking-widest uppercase text-white/40 hover:text-[#F44336] transition-colors duration-200 border border-white/10 hover:border-[#F44336]/40 px-4 py-2"
         >
           Apple Podcasts
         </a>
@@ -95,7 +95,7 @@ export default function Podcasts() {
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-xs tracking-[0.3em] uppercase text-[#c8a96e] mb-4"
+            className="text-xs tracking-[0.3em] uppercase text-[#F44336] mb-4"
           >
             A Podcast About Ideas
           </motion.p>
@@ -126,7 +126,7 @@ export default function Podcasts() {
               href="https://open.spotify.com/show/1rFM18xbbs7lRop9JEdaWp"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm tracking-widest uppercase text-black bg-[#c8a96e] hover:bg-white px-6 py-3 transition-all duration-300 font-medium"
+              className="inline-flex items-center gap-2 text-sm tracking-widest uppercase text-black bg-[#F44336] hover:bg-white px-6 py-3 transition-all duration-300 font-medium"
             >
               Listen on Spotify
             </a>
@@ -134,7 +134,7 @@ export default function Podcasts() {
               href="https://podcasts.apple.com/us/podcast/grey-matter-a-podcast-about-ideas/id1476735982"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm tracking-widest uppercase text-white border border-white/20 hover:border-[#c8a96e] hover:text-[#c8a96e] px-6 py-3 transition-all duration-300"
+              className="inline-flex items-center gap-2 text-sm tracking-widest uppercase text-white border border-white/20 hover:border-[#F44336] hover:text-[#F44336] px-6 py-3 transition-all duration-300"
             >
               Apple Podcasts
             </a>
@@ -145,7 +145,7 @@ export default function Podcasts() {
       {/* Episodes */}
       <section className="px-6 md:px-10 pb-32 bg-black">
         <div className="max-w-screen-xl mx-auto">
-          <div className="h-px bg-gradient-to-r from-[#c8a96e]/30 to-transparent mb-16" />
+          <div className="h-px bg-gradient-to-r from-[#F44336]/30 to-transparent mb-16" />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {podcasts.map((pod, i) => (
               <PodcastCard key={i} pod={pod} index={i} />

@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+﻿import { motion } from 'framer-motion'
 import PageTransition from '../components/PageTransition'
 
 const capabilities = [
@@ -51,7 +51,7 @@ function CapabilityRow({ cap, index }) {
 
       {/* Text */}
       <div className="flex flex-col justify-center p-10 md:p-16 bg-[#0f0f0f] border border-white/5">
-        <span className="text-xs tracking-[0.3em] uppercase text-[#c8a96e] mb-4">
+        <span className="text-xs tracking-[0.3em] uppercase text-[#F44336] mb-4">
           0{index + 1}
         </span>
         <h3 className="text-2xl md:text-3xl font-serif text-white mb-6 leading-snug">
@@ -75,7 +75,7 @@ export default function About() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-xs tracking-[0.3em] uppercase text-[#c8a96e] mb-6"
+            className="text-xs tracking-[0.3em] uppercase text-[#F44336] mb-6"
           >
             About Grey
           </motion.p>
@@ -108,7 +108,7 @@ export default function About() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="mt-10 inline-flex items-center gap-3 text-sm tracking-widest uppercase text-[#c8a96e] hover:text-white transition-colors duration-300 group"
+            className="mt-10 inline-flex items-center gap-3 text-sm tracking-widest uppercase text-[#F44336] hover:text-white transition-colors duration-300 group"
           >
             hello@grey.com
             <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
@@ -126,7 +126,7 @@ export default function About() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-xs tracking-[0.3em] uppercase text-[#c8a96e] mb-16"
+            className="text-xs tracking-[0.3em] uppercase text-[#F44336] mb-16"
           >
             Famously Effective, Culture-Driving Creativity
           </motion.h2>
@@ -147,7 +147,7 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            <p className="text-xs tracking-[0.3em] uppercase text-[#c8a96e] mb-6">Beyond Borders</p>
+            <p className="text-xs tracking-[0.3em] uppercase text-[#F44336] mb-6">Beyond Borders</p>
             <h2 className="text-4xl md:text-5xl font-serif text-white leading-tight mb-8">
               The best of both worlds.
             </h2>
@@ -181,7 +181,7 @@ export default function About() {
                 transition={{ delay: i * 0.07 }}
                 className="flex items-start gap-4 border-b border-white/8 pb-6"
               >
-                <span className="text-[#c8a96e] mt-1 text-lg">✦</span>
+                <span className="text-[#F44336] mt-1 text-lg">✦</span>
                 <div>
                   <p className="text-white font-medium mb-1">{item.award}</p>
                   <p className="text-sm text-white/40">{item.detail}</p>

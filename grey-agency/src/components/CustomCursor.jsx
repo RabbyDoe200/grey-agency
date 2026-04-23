@@ -67,7 +67,7 @@ export default function CustomCursor() {
           width: hovered ? 56 : clicked ? 20 : 36,
           height: hovered ? 56 : clicked ? 20 : 36,
           opacity: hidden ? 0 : 1,
-          borderColor: hovered ? '#c8a96e' : '#ffffff',
+          borderColor: hovered ? '#F44336' : '#ffffff',
         }}
         transition={{ duration: 0.2, ease: 'easeOut' }}
         style={{
@@ -101,7 +101,7 @@ export default function CustomCursor() {
           width: hovered ? 6 : 5,
           height: hovered ? 6 : 5,
           opacity: hidden ? 0 : 1,
-          backgroundColor: hovered ? '#c8a96e' : '#ffffff',
+          backgroundColor: hovered ? '#F44336' : '#ffffff',
         }}
         transition={{ duration: 0.15 }}
       />

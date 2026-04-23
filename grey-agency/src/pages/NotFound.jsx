@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import PageTransition from '../components/PageTransition'
 
@@ -9,7 +9,7 @@ export default function NotFound() {
         <motion.p
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-xs tracking-[0.3em] uppercase text-[#c8a96e] mb-6"
+          className="text-xs tracking-[0.3em] uppercase text-[#F44336] mb-6"
         >
           404
         </motion.p>
@@ -36,7 +36,7 @@ export default function NotFound() {
         >
           <Link
             to="/"
-            className="inline-flex items-center gap-3 text-sm tracking-widest uppercase text-black bg-[#c8a96e] hover:bg-white px-8 py-4 transition-all duration-300 group"
+            className="inline-flex items-center gap-3 text-sm tracking-widest uppercase text-black bg-[#F44336] hover:bg-white px-8 py-4 transition-all duration-300 group"
           >
             Back Home
             <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>

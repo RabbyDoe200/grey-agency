@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from 'react'
+﻿import { useState, useEffect, useRef, useCallback } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import MagneticButton from './MagneticButton'
@@ -45,14 +45,14 @@ function ScrambleLink({ link, active }) {
         to={link.href}
         onMouseEnter={scramble}
         className={`relative text-sm tracking-widest uppercase font-medium transition-colors duration-300 ${
-          active ? 'text-[#c8a96e]' : 'text-white/70 hover:text-white'
+          active ? 'text-[#F44336]' : 'text-white/70 hover:text-white'
         }`}
       >
         <span ref={elRef}>{link.label.toUpperCase()}</span>
         {active && (
           <motion.span
             layoutId="nav-underline"
-            className="absolute -bottom-1 left-0 right-0 h-px bg-[#c8a96e]"
+            className="absolute -bottom-1 left-0 right-0 h-px bg-[#F44336]"
           />
         )}
       </Link>
@@ -143,7 +143,7 @@ export default function Navbar() {
               >
                 <Link
                   to={link.href}
-                  className="text-5xl font-serif text-white hover:text-[#c8a96e] transition-colors duration-300 tracking-wide"
+                  className="text-5xl font-serif text-white hover:text-[#F44336] transition-colors duration-300 tracking-wide"
                 >
                   {link.label}
                 </Link>
@@ -184,7 +184,7 @@ function LogoScramble() {
     <span
       ref={elRef}
       onMouseEnter={scramble}
-      className="text-xl font-serif font-bold tracking-widest text-white hover:text-[#c8a96e] transition-colors duration-300 cursor-pointer"
+      className="text-xl font-serif font-bold tracking-widest text-white hover:text-[#F44336] transition-colors duration-300 cursor-pointer"
     >
       GREY
     </span>

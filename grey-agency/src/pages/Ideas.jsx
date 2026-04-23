@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import PageTransition from '../components/PageTransition'
 import IdeaCard from '../components/IdeaCard'
@@ -22,7 +22,7 @@ export default function Ideas() {
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-xs tracking-[0.3em] uppercase text-[#c8a96e] mb-4"
+            className="text-xs tracking-[0.3em] uppercase text-[#F44336] mb-4"
           >
             Made by Grey
           </motion.p>
@@ -48,7 +48,7 @@ export default function Ideas() {
                 onClick={() => setFilter(c)}
                 className={`px-4 py-1.5 text-xs tracking-widest uppercase rounded-full border transition-all duration-200 ${
                   filter === c
-                    ? 'bg-[#c8a96e] border-[#c8a96e] text-black font-medium'
+                    ? 'bg-[#F44336] border-[#F44336] text-black font-medium'
                     : 'border-white/20 text-white/50 hover:border-white/40 hover:text-white'
                 }`}
               >

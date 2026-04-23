@@ -1,4 +1,4 @@
-import { useParams, Link, useNavigate } from 'react-router-dom'
+﻿import { useParams, Link, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useEffect } from 'react'
 import PageTransition from '../components/PageTransition'
@@ -48,7 +48,7 @@ export default function NewsDetail() {
         <div className="max-w-screen-md mx-auto">
           <Link
             to="/news"
-            className="inline-flex items-center gap-2 text-xs tracking-widest uppercase text-white/30 hover:text-[#c8a96e] transition-colors duration-300 mb-8 block"
+            className="inline-flex items-center gap-2 text-xs tracking-widest uppercase text-white/30 hover:text-[#F44336] transition-colors duration-300 mb-8 block"
           >
             ← All News
           </Link>
@@ -58,7 +58,7 @@ export default function NewsDetail() {
             animate={{ opacity: 1, y: 0 }}
             className="flex items-center gap-4 mb-6"
           >
-            <span className="text-xs tracking-widest uppercase text-[#c8a96e] font-medium">
+            <span className="text-xs tracking-widest uppercase text-[#F44336] font-medium">
               {item.category}
             </span>
             <span className="text-white/20 text-xs">·</span>
@@ -79,7 +79,7 @@ export default function NewsDetail() {
       {/* ── Body ── */}
       <section className="bg-black px-6 md:px-16 pb-20">
         <div className="max-w-screen-md mx-auto">
-          <div className="h-px bg-gradient-to-r from-[#c8a96e]/40 to-transparent mb-12" />
+          <div className="h-px bg-gradient-to-r from-[#F44336]/40 to-transparent mb-12" />
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -126,10 +126,10 @@ export default function NewsDetail() {
               to={prev.slug}
               className="group flex flex-col gap-2 p-8 md:p-12 border-r border-white/5 hover:bg-white/3 transition-colors duration-300"
             >
-              <span className="text-xs tracking-widest uppercase text-white/30 group-hover:text-[#c8a96e] transition-colors duration-300">
+              <span className="text-xs tracking-widest uppercase text-white/30 group-hover:text-[#F44336] transition-colors duration-300">
                 ← Previous
               </span>
-              <span className="text-white font-serif text-base leading-snug group-hover:text-[#c8a96e] transition-colors duration-300">
+              <span className="text-white font-serif text-base leading-snug group-hover:text-[#F44336] transition-colors duration-300">
                 {prev.title}
               </span>
             </Link>
@@ -141,10 +141,10 @@ export default function NewsDetail() {
               to={next.slug}
               className="group flex flex-col gap-2 p-8 md:p-12 text-right hover:bg-white/3 transition-colors duration-300"
             >
-              <span className="text-xs tracking-widest uppercase text-white/30 group-hover:text-[#c8a96e] transition-colors duration-300">
+              <span className="text-xs tracking-widest uppercase text-white/30 group-hover:text-[#F44336] transition-colors duration-300">
                 Next →
               </span>
-              <span className="text-white font-serif text-base leading-snug group-hover:text-[#c8a96e] transition-colors duration-300">
+              <span className="text-white font-serif text-base leading-snug group-hover:text-[#F44336] transition-colors duration-300">
                 {next.title}
               </span>
             </Link>

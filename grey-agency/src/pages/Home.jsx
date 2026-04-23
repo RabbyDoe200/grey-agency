@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+﻿import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import PageTransition from '../components/PageTransition'
@@ -43,7 +43,7 @@ function HeroSlide({ idea, isActive }) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="text-xs tracking-[0.3em] uppercase text-[#c8a96e] font-medium mb-3"
+              className="text-xs tracking-[0.3em] uppercase text-[#F44336] font-medium mb-3"
             >
               {idea.client}
             </motion.p>
@@ -70,7 +70,7 @@ function HeroSlide({ idea, isActive }) {
             >
               <Link
                 to={idea.slug}
-                className="inline-flex items-center gap-3 text-sm tracking-widest uppercase text-white border border-white/30 hover:border-[#c8a96e] hover:text-[#c8a96e] px-6 py-3 w-fit transition-all duration-300 group"
+                className="inline-flex items-center gap-3 text-sm tracking-widest uppercase text-white border border-white/30 hover:border-[#F44336] hover:text-[#F44336] px-6 py-3 w-fit transition-all duration-300 group"
               >
                 View Case Study
                 <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
@@ -148,7 +148,7 @@ function StatItem({ value, label, delay = 0 }) {
       className="text-center cursor-default group"
     >
       <motion.p
-        animate={{ scale: hovered ? 1.08 : 1, color: hovered ? '#c8a96e' : '#f5f5f0' }}
+        animate={{ scale: hovered ? 1.08 : 1, color: hovered ? '#F44336' : '#f5f5f0' }}
         transition={{ type: 'spring', stiffness: 300, damping: 20 }}
         className="text-5xl md:text-6xl font-serif mb-2"
       >
@@ -209,7 +209,7 @@ function HomeTiltCard({ idea, index }) {
           }}
         />
         <div className="absolute bottom-0 left-0 right-0 p-5">
-          <p className="text-xs tracking-widest uppercase text-[#c8a96e] mb-1">{idea.client}</p>
+          <p className="text-xs tracking-widest uppercase text-[#F44336] mb-1">{idea.client}</p>
           <motion.h3
             animate={{ y: hovered ? -2 : 0 }}
             transition={{ type: 'spring', stiffness: 300, damping: 20 }}
@@ -262,7 +262,7 @@ export default function Home() {
               aria-label={`Go to slide ${i + 1}`}
               className={`transition-all duration-300 rounded-full ${
                 i === activeSlide
-                  ? 'w-8 h-1.5 bg-[#c8a96e]'
+                  ? 'w-8 h-1.5 bg-[#F44336]'
                   : 'w-1.5 h-1.5 bg-white/30 hover:bg-white/60'
               }`}
             />
@@ -285,7 +285,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="text-xs tracking-[0.3em] uppercase text-[#c8a96e] text-center mb-16"
+            className="text-xs tracking-[0.3em] uppercase text-[#F44336] text-center mb-16"
           >
             By the numbers
           </motion.p>
@@ -307,7 +307,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="text-xs tracking-[0.3em] uppercase text-[#c8a96e] mb-3"
+                className="text-xs tracking-[0.3em] uppercase text-[#F44336] mb-3"
               >
                 Made by Grey
               </motion.p>
@@ -366,7 +366,7 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           >
-            <p className="text-xs tracking-[0.3em] uppercase text-[#c8a96e] mb-6">Hello!</p>
+            <p className="text-xs tracking-[0.3em] uppercase text-[#F44336] mb-6">Hello!</p>
             <h2 className="text-4xl md:text-5xl font-serif text-white leading-tight mb-8">
               We're Grey, a global collective of creative entrepreneurs.
             </h2>
@@ -376,7 +376,7 @@ export default function Home() {
             <MagneticButton>
               <Link
                 to="/about"
-                className="inline-flex items-center gap-3 text-sm tracking-widest uppercase text-white border border-white/20 hover:border-[#c8a96e] hover:text-[#c8a96e] px-6 py-3 transition-all duration-300 group"
+                className="inline-flex items-center gap-3 text-sm tracking-widest uppercase text-white border border-white/20 hover:border-[#F44336] hover:text-[#F44336] px-6 py-3 transition-all duration-300 group"
               >
                 Our Story
                 <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
@@ -404,7 +404,7 @@ export default function Home() {
                 transition={{ delay: i * 0.08 + 0.2 }}
                 className="border border-white/10 p-6 hover:border-white/20 transition-colors duration-300"
               >
-                <p className="text-2xl font-serif text-[#c8a96e] mb-2">{item.label}</p>
+                <p className="text-2xl font-serif text-[#F44336] mb-2">{item.label}</p>
                 <p className="text-xs text-white/40 leading-relaxed">{item.sub}</p>
               </motion.div>
             ))}
@@ -420,14 +420,14 @@ export default function Home() {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <p className="text-xs tracking-[0.3em] uppercase text-[#c8a96e] mb-6">Ready to lead the next era?</p>
+          <p className="text-xs tracking-[0.3em] uppercase text-[#F44336] mb-6">Ready to lead the next era?</p>
           <h2 className="text-4xl md:text-6xl font-serif text-white mb-10 max-w-2xl mx-auto leading-tight">
             Let's build something famously effective.
           </h2>
           <MagneticButton strength={0.4}>
             <a
               href="mailto:hello@grey.com"
-              className="inline-flex items-center gap-3 text-sm tracking-widest uppercase text-black bg-[#c8a96e] hover:bg-white px-8 py-4 transition-all duration-300 font-medium group"
+              className="inline-flex items-center gap-3 text-sm tracking-widest uppercase text-black bg-[#F44336] hover:bg-white px-8 py-4 transition-all duration-300 font-medium group"
             >
               Get in Touch
               <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>

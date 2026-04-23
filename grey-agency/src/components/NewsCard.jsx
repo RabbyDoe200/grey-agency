@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
@@ -42,7 +42,7 @@ export default function NewsCard({ item, index = 0 }) {
 
       {/* Left accent bar */}
       <motion.div
-        className="absolute left-0 top-0 bottom-0 w-px bg-[#c8a96e]"
+        className="absolute left-0 top-0 bottom-0 w-px bg-[#F44336]"
         initial={{ scaleY: 0, originY: 0 }}
         animate={{ scaleY: hovered ? 1 : 0 }}
         transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
@@ -71,7 +71,7 @@ export default function NewsCard({ item, index = 0 }) {
           {/* Meta */}
           <div className="flex items-center gap-4 mb-3">
             <motion.span
-              animate={{ color: hovered ? '#c8a96e' : '#c8a96e99' }}
+              animate={{ color: hovered ? '#F44336' : '#F4433699' }}
               className="text-xs tracking-widest uppercase font-medium"
             >
               {item.category}

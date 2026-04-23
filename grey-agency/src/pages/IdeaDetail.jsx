@@ -1,4 +1,4 @@
-import { useParams, Link, useNavigate } from 'react-router-dom'
+﻿import { useParams, Link, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useEffect } from 'react'
 import PageTransition from '../components/PageTransition'
@@ -46,7 +46,7 @@ export default function IdeaDetail() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-xs tracking-[0.3em] uppercase text-[#c8a96e] mb-3"
+            className="text-xs tracking-[0.3em] uppercase text-[#F44336] mb-3"
           >
             {idea.client}
           </motion.p>
@@ -63,7 +63,7 @@ export default function IdeaDetail() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.45 }}
-              className="text-xs tracking-widest uppercase text-[#c8a96e]/80"
+              className="text-xs tracking-widest uppercase text-[#F44336]/80"
             >
               {idea.awards}
             </motion.p>
@@ -75,7 +75,7 @@ export default function IdeaDetail() {
       <div className="bg-black px-6 md:px-16 pt-10 pb-2">
         <Link
           to="/ideas"
-          className="inline-flex items-center gap-2 text-xs tracking-widest uppercase text-white/30 hover:text-[#c8a96e] transition-colors duration-300"
+          className="inline-flex items-center gap-2 text-xs tracking-widest uppercase text-white/30 hover:text-[#F44336] transition-colors duration-300"
         >
           ← All Ideas
         </Link>
@@ -87,16 +87,16 @@ export default function IdeaDetail() {
           {/* Left — meta */}
           <div className="space-y-8">
             <div>
-              <p className="text-xs tracking-[0.3em] uppercase text-[#c8a96e] mb-2">Client</p>
+              <p className="text-xs tracking-[0.3em] uppercase text-[#F44336] mb-2">Client</p>
               <p className="text-white font-serif text-lg">{idea.client}</p>
             </div>
             <div>
-              <p className="text-xs tracking-[0.3em] uppercase text-[#c8a96e] mb-2">Campaign</p>
+              <p className="text-xs tracking-[0.3em] uppercase text-[#F44336] mb-2">Campaign</p>
               <p className="text-white font-serif text-lg">{idea.title}</p>
             </div>
             {idea.awards && (
               <div>
-                <p className="text-xs tracking-[0.3em] uppercase text-[#c8a96e] mb-2">Recognition</p>
+                <p className="text-xs tracking-[0.3em] uppercase text-[#F44336] mb-2">Recognition</p>
                 <p className="text-white/60 text-sm leading-relaxed">{idea.awards}</p>
               </div>
             )}
@@ -113,7 +113,7 @@ export default function IdeaDetail() {
                 <h2 className="text-2xl md:text-3xl font-serif text-white mb-6 leading-snug">
                   {idea.subheadline}
                 </h2>
-                <p className="text-xs tracking-[0.25em] uppercase text-[#c8a96e] mb-4">
+                <p className="text-xs tracking-[0.25em] uppercase text-[#F44336] mb-4">
                   Famously Effective
                 </p>
                 <p className="text-white/50 leading-relaxed text-sm md:text-base">
@@ -129,7 +129,7 @@ export default function IdeaDetail() {
       {idea.gallery && idea.gallery.length > 1 && (
         <section className="bg-[#0a0a0a] px-6 md:px-16 py-16">
           <div className="max-w-screen-lg mx-auto">
-            <p className="text-xs tracking-[0.3em] uppercase text-[#c8a96e] mb-10">Gallery</p>
+            <p className="text-xs tracking-[0.3em] uppercase text-[#F44336] mb-10">Gallery</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {idea.gallery.slice(1).map((src, i) => (
                 <motion.div
@@ -164,12 +164,12 @@ export default function IdeaDetail() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="border-l-2 border-[#c8a96e] pl-6"
+                className="border-l-2 border-[#F44336] pl-6"
               >
                 <p className="text-white/70 italic text-base md:text-lg leading-relaxed mb-2">
                   "{q.text}"
                 </p>
-                <cite className="text-xs tracking-widest uppercase text-[#c8a96e]/70 not-italic">
+                <cite className="text-xs tracking-widest uppercase text-[#F44336]/70 not-italic">
                   — {q.source}
                 </cite>
               </motion.blockquote>
@@ -186,10 +186,10 @@ export default function IdeaDetail() {
               to={prev.slug}
               className="group flex flex-col gap-2 p-8 md:p-12 border-r border-white/5 hover:bg-white/3 transition-colors duration-300"
             >
-              <span className="text-xs tracking-widest uppercase text-white/30 group-hover:text-[#c8a96e] transition-colors duration-300">
+              <span className="text-xs tracking-widest uppercase text-white/30 group-hover:text-[#F44336] transition-colors duration-300">
                 ← Previous
               </span>
-              <span className="text-white font-serif text-lg leading-snug group-hover:text-[#c8a96e] transition-colors duration-300">
+              <span className="text-white font-serif text-lg leading-snug group-hover:text-[#F44336] transition-colors duration-300">
                 {prev.title}
               </span>
               <span className="text-xs text-white/30">{prev.client}</span>
@@ -202,10 +202,10 @@ export default function IdeaDetail() {
               to={next.slug}
               className="group flex flex-col gap-2 p-8 md:p-12 text-right hover:bg-white/3 transition-colors duration-300"
             >
-              <span className="text-xs tracking-widest uppercase text-white/30 group-hover:text-[#c8a96e] transition-colors duration-300">
+              <span className="text-xs tracking-widest uppercase text-white/30 group-hover:text-[#F44336] transition-colors duration-300">
                 Next →
               </span>
-              <span className="text-white font-serif text-lg leading-snug group-hover:text-[#c8a96e] transition-colors duration-300">
+              <span className="text-white font-serif text-lg leading-snug group-hover:text-[#F44336] transition-colors duration-300">
                 {next.title}
               </span>
               <span className="text-xs text-white/30">{next.client}</span>

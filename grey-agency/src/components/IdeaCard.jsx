@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+﻿import { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
@@ -92,13 +92,13 @@ export default function IdeaCard({ idea, index = 0 }) {
           {/* Content — grows to fill remaining height so all cards align */}
           <div className="flex flex-col flex-1 p-6">
             {/* Client — fixed 1 line */}
-            <p className="text-xs tracking-widest uppercase text-[#c8a96e] font-medium mb-2 truncate">
+            <p className="text-xs tracking-widest uppercase text-[#F44336] font-medium mb-2 truncate">
               {idea.client}
             </p>
             {/* Title — fixed 2 lines */}
             <h3
               className="text-lg font-serif leading-snug transition-colors duration-300 line-clamp-2 mb-2"
-              style={{ color: hovered ? '#c8a96e' : '#f5f5f0' }}
+              style={{ color: hovered ? '#F44336' : '#f5f5f0' }}
             >
               {idea.title}
             </h3>
@@ -119,7 +119,7 @@ export default function IdeaCard({ idea, index = 0 }) {
                 </motion.span>
               </div>
               <motion.div
-                className="absolute bottom-0 left-0 h-px bg-[#c8a96e]"
+                className="absolute bottom-0 left-0 h-px bg-[#F44336]"
                 initial={{ width: '0%' }}
                 animate={{ width: hovered ? '100%' : '0%' }}
                 transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}

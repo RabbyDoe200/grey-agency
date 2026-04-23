@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+﻿import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import PageTransition from '../components/PageTransition'
 
@@ -54,7 +54,7 @@ export default function Legal() {
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-xs tracking-[0.3em] uppercase text-[#c8a96e] mb-4"
+            className="text-xs tracking-[0.3em] uppercase text-[#F44336] mb-4"
           >
             Grey Group
           </motion.p>
@@ -75,7 +75,7 @@ export default function Legal() {
             {/* Internal link — no external redirect */}
             <Link
               to="/legal/cookie-policy"
-              className="text-xs tracking-widest uppercase text-[#c8a96e] hover:text-white border border-[#c8a96e]/30 hover:border-white/30 px-4 py-2 transition-all duration-200"
+              className="text-xs tracking-widest uppercase text-[#F44336] hover:text-white border border-[#F44336]/30 hover:border-white/30 px-4 py-2 transition-all duration-200"
             >
               Cookie Policy →
             </Link>
@@ -86,7 +86,7 @@ export default function Legal() {
       {/* Content */}
       <section className="px-6 md:px-10 pb-32 bg-black">
         <div className="max-w-screen-md mx-auto space-y-12">
-          <div className="h-px bg-gradient-to-r from-[#c8a96e]/30 to-transparent" />
+          <div className="h-px bg-gradient-to-r from-[#F44336]/30 to-transparent" />
           {sections.map((sec, i) => (
             <motion.div
               key={i}

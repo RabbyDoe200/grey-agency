@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import PageTransition from '../components/PageTransition'
 import { locations, regions } from '../data/locations'
@@ -12,7 +12,7 @@ function LocationCard({ loc, index, onSelect, isActive }) {
       transition={{ duration: 0.5, delay: (index % 4) * 0.07 }}
       onClick={() => onSelect(loc)}
       className={`group relative overflow-hidden text-left w-full focus:outline-none ${
-        isActive ? 'ring-1 ring-[#c8a96e]' : ''
+        isActive ? 'ring-1 ring-[#F44336]' : ''
       }`}
     >
       {/* Image */}
@@ -27,15 +27,15 @@ function LocationCard({ loc, index, onSelect, isActive }) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
         {isActive && (
-          <div className="absolute inset-0 bg-[#c8a96e]/10" />
+          <div className="absolute inset-0 bg-[#F44336]/10" />
         )}
         <div className="absolute bottom-0 left-0 right-0 p-4">
-          <p className={`font-serif text-lg leading-tight transition-colors duration-300 ${isActive ? 'text-[#c8a96e]' : 'text-white group-hover:text-[#c8a96e]'}`}>
+          <p className={`font-serif text-lg leading-tight transition-colors duration-300 ${isActive ? 'text-[#F44336]' : 'text-white group-hover:text-[#F44336]'}`}>
             {loc.city}
           </p>
           <p className="text-xs text-white/50 mt-0.5">{loc.country}</p>
           {loc.role && (
-            <span className="mt-1 inline-block text-xs tracking-widest uppercase text-[#c8a96e]/70">
+            <span className="mt-1 inline-block text-xs tracking-widest uppercase text-[#F44336]/70">
               {loc.role}
             </span>
           )}
@@ -74,12 +74,12 @@ function DetailPanel({ loc, onClose }) {
 
       {/* Info */}
       <div className="p-8">
-        <p className="text-xs tracking-[0.3em] uppercase text-[#c8a96e] mb-2">{loc.region}</p>
+        <p className="text-xs tracking-[0.3em] uppercase text-[#F44336] mb-2">{loc.region}</p>
         <h2 className="text-3xl font-serif text-white mb-1">{loc.city}</h2>
         <p className="text-white/40 text-sm mb-6">{loc.country}</p>
 
         {loc.role && (
-          <span className="inline-block text-xs tracking-widest uppercase text-[#c8a96e] border border-[#c8a96e]/30 px-3 py-1 mb-6">
+          <span className="inline-block text-xs tracking-widest uppercase text-[#F44336] border border-[#F44336]/30 px-3 py-1 mb-6">
             {loc.role}
           </span>
         )}
@@ -96,7 +96,7 @@ function DetailPanel({ loc, onClose }) {
               <p className="text-xs tracking-widest uppercase text-white/30 mb-1">Phone</p>
               <a
                 href={`tel:${loc.phone.replace(/\s/g, '')}`}
-                className="text-white/70 text-sm hover:text-[#c8a96e] transition-colors duration-200"
+                className="text-white/70 text-sm hover:text-[#F44336] transition-colors duration-200"
               >
                 {loc.phone}
               </a>
@@ -107,7 +107,7 @@ function DetailPanel({ loc, onClose }) {
         <div className="mt-8 pt-6 border-t border-white/10">
           <a
             href="mailto:hello@grey.com"
-            className="inline-flex items-center gap-2 text-sm tracking-widest uppercase text-[#c8a96e] hover:text-white transition-colors duration-300 group"
+            className="inline-flex items-center gap-2 text-sm tracking-widest uppercase text-[#F44336] hover:text-white transition-colors duration-300 group"
           >
             Get in touch
             <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
@@ -139,7 +139,7 @@ export default function Locations() {
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-xs tracking-[0.3em] uppercase text-[#c8a96e] mb-4"
+            className="text-xs tracking-[0.3em] uppercase text-[#F44336] mb-4"
           >
             {locations.length} Studios · 4 Regions
           </motion.p>
@@ -173,7 +173,7 @@ export default function Locations() {
                 onClick={() => { setActiveRegion(r); setSelected(null) }}
                 className={`px-4 py-1.5 text-xs tracking-widest uppercase rounded-full border transition-all duration-200 ${
                   activeRegion === r
-                    ? 'bg-[#c8a96e] border-[#c8a96e] text-black font-medium'
+                    ? 'bg-[#F44336] border-[#F44336] text-black font-medium'
                     : 'border-white/20 text-white/50 hover:border-white/40 hover:text-white'
                 }`}
               >
@@ -235,7 +235,7 @@ export default function Locations() {
             viewport={{ once: true }}
             className="border border-white/10 p-12 md:p-20 text-center"
           >
-            <p className="text-xs tracking-[0.3em] uppercase text-[#c8a96e] mb-6">Global Reach</p>
+            <p className="text-xs tracking-[0.3em] uppercase text-[#F44336] mb-6">Global Reach</p>
             <p className="text-4xl md:text-5xl font-serif text-white mb-6 leading-tight">
               Wherever you are,<br />we're there.
             </p>
@@ -245,7 +245,7 @@ export default function Locations() {
             </p>
             <a
               href="mailto:hello@grey.com"
-              className="inline-flex items-center gap-3 text-sm tracking-widest uppercase text-black bg-[#c8a96e] hover:bg-white px-8 py-4 transition-all duration-300 font-medium group"
+              className="inline-flex items-center gap-3 text-sm tracking-widest uppercase text-black bg-[#F44336] hover:bg-white px-8 py-4 transition-all duration-300 font-medium group"
             >
               Say Hello
               <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
