@@ -1,0 +1,7 @@
+{
+  "buildCommand": "cd grey-agency && npm install && npm run build",
+  "outputDirectory": "grey-agency/dist",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
